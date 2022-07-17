@@ -2,8 +2,6 @@
 # Hayden Brown
 import time
 
-startTime = time.perf_counter()
-
 limit = int(input("Enter maximum number (-1 for infinite): "))
 listPrimes = False
 
@@ -17,6 +15,7 @@ def factors(n):
     return f
 
 print("Calculating prime numbers...")
+startTime = time.perf_counter()
 
 if limit == -1:
     i = 1
